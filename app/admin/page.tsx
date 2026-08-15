@@ -1,6 +1,7 @@
 import { prisma } from "../../lib/prisma";
 import FormularioProducto from "./FormularioProducto";
 import FilaProducto from "./FilaProducto";
+import Link from "next/link";
 import styles from "./page.module.css";
 
 export default async function AdminPage() {
@@ -8,7 +9,10 @@ export default async function AdminPage() {
 
   return (
     <main className={styles.main}>
-      <h1 className={styles.titulo}>Administración de productos</h1>
+      <div className={styles.encabezado}>
+        <h1 className={styles.titulo}>Administración de productos</h1>
+        <Link href="/" className={styles.botonVolver}>← Volver al catálogo</Link>
+      </div>
 
       <section className={styles.seccion}>
         <h2 className={styles.subtitulo}>Agregar producto</h2>
