@@ -4,31 +4,10 @@
   margin: 0 auto;
 }
 
-.encabezado {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 32px;
-}
-
 .titulo {
   font-size: 1.5rem;
   font-weight: 700;
-}
-
-.botonVolver {
-  font-size: 0.875rem;
-  font-weight: 500;
-  color: #111111;
-  text-decoration: none;
-  padding: 8px 16px;
-  border: 1px solid #d1d5db;
-  border-radius: 4px;
-  transition: background 0.15s ease;
-}
-
-.botonVolver:hover {
-  background: #f3f4f6;
+  margin-bottom: 32px;
 }
 
 .seccion {
